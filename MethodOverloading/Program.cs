@@ -12,13 +12,13 @@ namespace MethodOverloading
         {
             return num1 + num2;
         }
-        public static string Add(int num1, int num2, bool bool1)
+        public static string Add(int num1, int num2, bool isDollar)
         {
-            if (bool1 == true && num1+num2 == 1)
+            if (isDollar == true && num1+num2 == 1)
             {
                 return $"{num1 + num2} dollar";
             }
-            else if (bool1 == true)
+            else if (isDollar == true)
             {
                 return $"{num1 + num2} dollars";
             }
